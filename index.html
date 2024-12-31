@@ -1,0 +1,82 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="style_sheet.css" />
+    <title>Joanna's Packing Calculator</title>
+  </head>
+
+  <div class="main_header aus_font">
+    <i> Joanna's Packing Calculator </i>
+  </div>
+
+  <body class="main_body">
+    <div>
+      <b>Taking a trip? Stressed about packing? We're here to help!</b>
+      <br />Answer a few simple questions and we'll help you decide what you
+      need to pack.
+    </div>
+    <hr />
+
+    <div id="packing_questions">
+      <form class="form_style" id="destination_form">
+        <label for="destination"
+          ><b> What's the weather like at your destination?</b></label
+        ><br />
+        <input type="radio" id="hot" name="destination" value="HOT" />
+        <label for="hot">hot</label><br />
+        <input type="radio" id="cold" name="destination" value="COLD" />
+        <label for="cold">cold</label><br />
+        <input type="radio" id="rainy" name="destination" value="RAINY" />
+        <label for="rainy">rainy</label><br />
+        <input type="radio" id="snowy" name="destination" value="SNOWY" />
+        <label for="snowy">snowy</label>
+        <!-- <input type="radio" id="warm" name="destination" value="WARM">
+                    <label for="warm">warm</label><br>-->
+        <!-- <input type="radio" id="cool" name="destination" value="COOL">
+                    <label for="cool">cool</label><br>-->
+        <br />
+        <br />
+        <label for="fancy"><b> Any fancy events?</b></label
+        ><br />
+        <input type="radio" id="yes_fancy" name="fancy" value="FANCY" />
+        <label for="fancy">yes</label><br />
+        <input type="radio" id="not_fancy" name="fancy" value="NOT_FANCY" />
+        <label for="not_fancy">nope</label><br />
+        <br />
+        <br />
+        <label for="trip_length"><b> How long will you be there?</b></label
+        ><br />
+        <input type="number" id="trip_length" min="1" step="1" />
+        <br />
+        <br />
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+
+    <hr/>
+    <script src="./packing_script.js"></script>
+    <div id="sample_list" class="list_box" style="left: 550px">
+      <p>For example, for a one day trip, you'd need to pack:</p>
+      <ul id="sample_list">
+        <li>1 pair of shorts</li>
+        <li>1 pair of pants</li>
+        <li>1 t-shirt</li>
+        <li>1 long sleeved shirt</li>
+        <li>1 pair of socks</li>
+        <li>1 pair of underwear</li>
+        <li>1 pair of shoes</li>
+        <li>toiletries</li>
+      </ul>
+    </div>
+
+    <div id="list_result" class="list_box" style="left: 550px">
+      For your trip, you need to pack
+      <ul id="final_list"></ul>
+    </div>
+  </body>
+</html>

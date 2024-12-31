@@ -1,0 +1,66 @@
+.main_body {
+  background-image: linear-gradient(45deg, #fefae0 15%, #faedcd 90%);
+  padding: 2rem;
+  direction: str;
+  font-family: geneva;
+  color: #283618;
+  font-size: 20px;
+}
+
+.main_header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  border-radius: 50px;
+  background: #dda15e;
+  box-shadow: inset 25px 25px 49px #dda15e;
+  margin: 80 px;
+  padding-right: 30px;
+  padding-left: 30px;
+  border: 2px solid #283618;
+  text-align: center;
+  font-size: 40px;
+}
+
+.list_box {
+  position: absolute;
+  color: #fefae0;
+  background: #606c38;
+  list-style-position: inside;
+  top: 100px;
+  margin: 100px;
+  width: 360px;
+  padding: 4px;
+}
+
+.picture {
+  border: 5px solid;
+  border-color: darkslateblue;
+  width: 300px;
+  height: 200px;
+  margin: 20px;
+  border-radius: 9px;
+}
+
+.aus_font {
+  font-family: "Edu AU VIC WA NT Hand", cursive;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.form_style {
+  background-image: linear-gradient(45deg, #bc6c25 15%, #d4a373 90%);
+  padding: 2rem;
+  direction: str;
+  font-family: geneva;
+  font-size: 20px;
+  border: 5px solid;
+  border-color: beige;
+  border-radius: 9px;
+  width: 500px;
+}
+
+#list_result {
+  display: none;
+}
