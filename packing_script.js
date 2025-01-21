@@ -12,7 +12,7 @@ document.getElementById("destination_form").addEventListener("submit", async fun
 
   // OpenWeatherMap API Keys and URLs
   const apiKey = "17f351f3eb6bbbc60a114900c2abcd86";
-  const geocodeAPI = `http://api.openweathermap.org/geo/1.0/direct?q=${location}&limit=1&appid=${apiKey}`;
+  const geocodeAPI = `https://api.openweathermap.org/geo/1.0/direct?q=${location}&limit=1&appid=${apiKey}`;
 
   try {
       // Call Geocoding API to get latitude and longitude
